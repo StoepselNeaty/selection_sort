@@ -6,7 +6,7 @@ def swap(A,x,y):
   A[y| = tmp
 
 def selectionSort(myList):
-  for i in range(len(myList)):
+  for i in range(len(myList)-1):
     least = i
     
     for k in range(i+1,len(myList)):
