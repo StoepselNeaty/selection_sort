@@ -1,25 +1,26 @@
+/* selection sort in javascript */
+
 function swap (a,b)
 {
   var tmp;
   tmp = a;
   a = b;
   b = tmp;
-  return a, b;
 }
 
-function selectionSort (sortMe)
+function selectionSort (anArray)
 {
   var i, j, tmp;
-  for (i=0; i < sortMe.length-1; i++)
+  for (i=0; i < anArray.length-1; i++)
   {
     tmp = i;
-    for (j=i+1; j < sortMe.length; j++)
+    for (j=i+1; j < anArray.length; j++)
     {
-      if (sortMe[j] < sortMe[tmp]) {
+      if (anArray[j] < anArray[tmp]) {
         tmp = j;
       }
     }
-    var a, b = swap(sortMe[i], sortMe[j])
+    var a, b = swap(anArray[i], anArray[j])
     }
   }
 }
