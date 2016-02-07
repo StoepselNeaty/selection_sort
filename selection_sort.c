@@ -25,5 +25,5 @@ void selectionSort(int arr[], int n) {
   }
 }
 
-/* statically checked, 2016-02-05 gcc --analyze selection_sort.c */
-/* stoepsel_neaty */
+/* static checks */
+/* gcc --analyze selection_sort.c 2016-02-05 */
