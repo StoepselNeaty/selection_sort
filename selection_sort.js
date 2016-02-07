@@ -1,3 +1,12 @@
+function swap (a,b)
+{
+  var tmp
+  tmp = a;
+  a = b;
+  b = tmp;
+  return a, b;
+}
+
 function selectionSort (sortMe)
 {
   var i, j, tmp, tmp2;
@@ -10,10 +19,7 @@ function selectionSort (sortMe)
         tmp = j;
       }
     }
-    if (tmp!=i){
-      tmp2 = sortMe[tmp];
-      sortMe[tmp] = sortMe[i];
-      sortMe[i] = tmp2;
+    var a, b = swap(sortMe[i], sortMe[j])
     }
   }
 }
