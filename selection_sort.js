@@ -1,6 +1,6 @@
 function swap (a,b)
 {
-  var tmp
+  var tmp;
   tmp = a;
   a = b;
   b = tmp;
@@ -9,7 +9,7 @@ function swap (a,b)
 
 function selectionSort (sortMe)
 {
-  var i, j, tmp, tmp2;
+  var i, j, tmp;
   for (i=0; i < sortMe.length-1; i++)
   {
     tmp = i;
