@@ -25,5 +25,4 @@ void selectionSort(int arr[], int n) {
   }
 }
 
-/* static checks */
 /* gcc --analyze selection_sort.c 2016-02-05 */
